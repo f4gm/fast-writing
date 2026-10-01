@@ -2,11 +2,18 @@ package com.example.fastwriting.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 public class WelcomeController {
 
     @FXML
-    private Button btnStart;
+    private Button StartButton;
+
+    @FXML
+    private Label welcomeLabel;
+
+    @FXML
+    private Label instructionLabel;
 
     @FXML
     private void onStart() {
