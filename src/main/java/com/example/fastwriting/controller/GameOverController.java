@@ -40,7 +40,7 @@ public class GameOverController implements Navigable, SummaryAware {
      * Se ejecuta después de initialize(), por lo que las etiquetas ya han sido inyectadas.
      */
     @Override
-    public void setSummary(int completedLevels, String reason, int remainingSeconds) {
+    public void setSummary(int completedLevels, String reason, double remainingSeconds) {
         feedbackLabel.setText(reason);
         recordLabel.setText("Niveles completados: " + completedLevels);
         remainingTimeLabel.setText("Tiempo restante: " + remainingSeconds + "s");

@@ -134,6 +134,11 @@ public class GameController implements Navigable, TimerListener {
             timer.stop();
         }
         gameState.nextLevel();
+
+        int MAX_LEVEL = 101;
+        if (gameState.getLevel() == MAX_LEVEL) {
+            endGame("Felicidades. ¡Haz terminado el juego!");
+        }
         inputTextField.clear();
         showFeedback("¡Correcto! Nivel superado. Ahora va el nivel " + gameState.getLevel() + ".");
         startLevel();
@@ -164,7 +169,7 @@ public class GameController implements Navigable, TimerListener {
         if (timer != null) {
             timer.stop();
         }
-        navigator.showGameOver(gameState.getCompletedLevels(), reason, 0);
+        navigator.showGameOver(gameState.getCompletedLevels(), reason, timer.getCurrentTime());
     }
 
     private void showFeedback(String message) {

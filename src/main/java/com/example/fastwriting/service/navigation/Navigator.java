@@ -38,7 +38,7 @@ public class Navigator {
      * @param reason motivo por el que terminó la partida
      * @param remainingSeconds segundos restantes al finalizar la partida
      */
-    public void showGameOver(int completedLevels, String reason, int remainingSeconds) {
+    public void showGameOver(int completedLevels, String reason, double remainingSeconds) {
         Object controller = show("/com/example/fastwriting/view/GameOver.fxml");
 
         if (controller instanceof SummaryAware summaryAware) {

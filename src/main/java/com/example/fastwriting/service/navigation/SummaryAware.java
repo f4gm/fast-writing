@@ -14,5 +14,5 @@ public interface SummaryAware {
      * @param reason motivo por el que terminó la partida (p. ej., "Tiempo agotado")
      * @param remainingSeconds segundos restantes al finalizar la partida
      */
-    void setSummary(int completedLevels, String reason, int remainingSeconds);
+    void setSummary(int completedLevels, String reason, double remainingSeconds);
 }

@@ -5,7 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fastwriting.controller.GameOverController">
+<VBox alignment="CENTER" spacing="20" prefWidth="450.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fastwriting.controller.GameOverController">
 
     <Label fx:id="gameOverLabel" text="Fin del juego" />
    <Label fx:id="feedbackLabel" text="Te has quedado sin tiempo" />
