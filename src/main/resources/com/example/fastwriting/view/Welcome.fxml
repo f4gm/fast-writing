@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fastwriting.controller.WelcomeController">
+    <Label text="¡Bienvenido a Escritura Rapida!" />
+    <Label text="Escribe la palabra antes de que se acabe el tiempo." />
+    <Label text="En cada nivel, la palabra se volverá más complicada o el tiempo se reducirá." />
+    <Label text="Intenta superar el mayor número de niveles posibles. ¡Buena suerte!" />
+    <Button onAction="#onStart" text="Comenzar" />
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
