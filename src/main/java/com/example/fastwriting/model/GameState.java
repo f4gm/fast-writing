@@ -41,8 +41,8 @@ public class GameState {
      */
     public int secondsForLevel(int targetLevel) {
         int INITIAL_TIME = 20; // Tiempo inicial de los niveles
-        int REDUCTION_FACTOR = 2; // Cantidad de segundos a reducir
-        int REDUCTION_EVERY = 5; // Cada cuántos niveles reducir
+        int REDUCTION_FACTOR = 4; // Cantidad de segundos a reducir
+        int REDUCTION_EVERY = 2; // Cada cuántos niveles reducir
 
         return Math.max(
                 2,
